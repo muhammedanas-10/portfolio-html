@@ -1,0 +1,347 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    
+}
+header{
+background-color: rgb(0, 0, 0);
+ width: 100%;
+ height: 80px;
+ display: flex;
+ justify-content: space-between;
+ position: sticky;
+ top: 0px;
+ border: 3px solid white;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+header ul li{
+    margin: 20px;
+    list-style: none;
+
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+header ul li a i{
+    margin-right: 8px;
+}
+header ul li a:hover{
+    text-shadow: 3px 5px 4px;
+    color: rgb(32, 255, 32);
+}
+header h1{
+    font-family: "Volkhov", serif;
+    margin-top: 20px;
+    margin-right: 300px;
+}
+ #welcome h1{
+    position: absolute;
+    border: 4px white solid;
+    box-shadow: 3px 4px 5px 5px;
+    background: transparent;
+    font-family: "IM Fell English SC", serif;
+    font-size: xx-large;
+    top: 70%;
+    left: 30%;
+    padding: 50px;
+} 
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.col {
+    text-align: center;
+    font-family: "Rock Salt", cursive;
+    font-size: xx-large;
+    font-weight: 200px;
+}
+span{
+    color: rgb(3, 240, 3);
+    font-family: "Rock Salt", cursive;
+}
+#name1{
+    font-family: "Rock Salt", cursive;
+}
+#name{
+    font-family: "Trade Winds", system-ui;
+}
+.button {
+    --main-focus: #2d8cf0;
+    --font-color: #dedede;
+    --bg-color-sub: #222;
+    --bg-color: #323232;
+    --main-color: #dedede;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    left: 260px;
+  }
+  
+  .button, .button_icon, .button_text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {   
+    transform: translateX(21px);
+    color: var(--font-color);
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .button:hover {
+    background: var(--bg-color);
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+  h2{
+    font-family: "Aboreto", system-ui;
+    text-align: center;
+    margin: 40px;
+    font-size: xx-large;
+  }
+  .col1{
+    border-radius: 21px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  14px 14px 6px #5a5a5a,
+                 -14px -14px 6px #ffffff;
+    font-family: "NTR", sans-serif;
+    text-align: justify;
+    margin: 30px;
+    color: black;
+    padding: 40px;
+  }
+  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+   /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: rgb(4, 55, 105);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .col2{
+    font-family: "NTR", sans-serif;
+    font-size: small;
+    margin: 10px;
+  }
+  .col3{
+    width: 300px;
+    border-radius: 15px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  10px 10px 0px #666666,
+             -10px -10px 0px #ffffff;
+             text-align: center justify;
+             font-family: "NTR", sans-serif;
+             color: black;
+             font-size: smaller;
+             margin: 30px;
+  }
+ .col4{
+    font-family: "NTR", sans-serif;
+    font-size: medium;
+    text-align: center;
+ } 
+ .col5{
+    font-family: "NTR", sans-serif;
+    font-size: medium;
+    text-align: center;
+ } 
+.col5 p{
+    font-size: large;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 290px;
+  }
+  
+  .input-container > span,
+  .input-container .input {
+    white-space: nowrap;
+    display: block;
+  }
+  
+  .input-container > span,
+  .input-container .input:first-child {
+    border-radius: 6px 0 0 6px;
+  }
+  
+  .input-container > span,
+  .input-container .input {
+    border-radius: 0 6px 6px 0;
+  }
+  
+  .input-container > span,
+  .input-container .input {
+    margin-left: -1px;
+  }
+  
+  .input-container .input {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .input-container span {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6b7385;
+    background: #d4def5;
+    border: 1px solid #CDD9ED;
+    font-weight: bold;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  }
+  
+  .input-container:focus-within > span {
+    color: #fff;
+    background-color: #148cd1;
+    border-color: #148cd1;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    color: #99A3BA;
+    border: 1px solid  #CDD9ED;
+    background: #fff;
+    transition: border 0.3s ease;
+  }
+  
+  .input::placeholder {
+    color: #CBD1DC;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #148cd1;
+  }
+  #mail{
+    font-family: "NTR", sans-serif;
+  }
+  footer{
+    background-color: rgb(25, 247, 5);
+    color: white;
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .col3 img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
